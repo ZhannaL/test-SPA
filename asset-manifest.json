@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/test-SPA/static/css/main.81eb715a.css",
+    "main.js": "/test-SPA/static/js/main.45efe757.js",
+    "static/js/453.392ff939.chunk.js": "/test-SPA/static/js/453.392ff939.chunk.js",
+    "static/media/headerBg.png": "/test-SPA/static/media/headerBg.4aab6891aa0154909619.png",
+    "static/media/earth.svg": "/test-SPA/static/media/earth.83d68f94de9d84f4e1bc5dc89d3c3ffc.svg",
+    "static/media/offer3.png": "/test-SPA/static/media/offer3.5b2dff8c33adfdbf061e.png",
+    "static/media/offer4.png": "/test-SPA/static/media/offer4.1903d0de84f9728226bb.png",
+    "static/media/offer1.png": "/test-SPA/static/media/offer1.041b7b0272dfbd17a6ff.png",
+    "static/media/rocket.svg": "/test-SPA/static/media/rocket.a4389852c90b9d43571cac86eea0e8ab.svg",
+    "static/media/offer2.png": "/test-SPA/static/media/offer2.0a68602183e8f672b863.png",
+    "static/media/shadow.png": "/test-SPA/static/media/shadow.65953cff4abd10254c6a.png",
+    "static/media/logo.svg": "/test-SPA/static/media/logo.f4153131d3955bdfa609912a9f3b5caf.svg",
+    "static/media/busketHover.svg": "/test-SPA/static/media/busketHover.130703b7b0cf9871648f.svg",
+    "static/media/busket.svg": "/test-SPA/static/media/busket.5fdc8f10c95015c32240.svg",
+    "static/media/menu.svg": "/test-SPA/static/media/menu.7e65dcdbfcb4fb7f60ea.svg",
+    "static/media/close.svg": "/test-SPA/static/media/close.60d4f41347544050a7b9.svg",
+    "index.html": "/test-SPA/index.html",
+    "main.81eb715a.css.map": "/test-SPA/static/css/main.81eb715a.css.map",
+    "main.45efe757.js.map": "/test-SPA/static/js/main.45efe757.js.map",
+    "453.392ff939.chunk.js.map": "/test-SPA/static/js/453.392ff939.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81eb715a.css",
+    "static/js/main.45efe757.js"
+  ]
+}
