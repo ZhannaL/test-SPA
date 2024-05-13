@@ -1,0 +1,87 @@
+@import '../../Styles/typography.scss';
+@import '../../Styles/breakpoints.scss';
+
+.header {
+  height: 500px;
+  background-image: url('../../assets/shadow.png'),
+    url('../../assets/headerBg.png');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding);
+  margin-top: var(--nav-height);
+}
+
+.text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  @extend %typography-extra-bold;
+  font-size: 72px;
+  line-height: 1;
+  color: inherit;
+  text-align: left;
+  padding-bottom: var(--space-6);
+}
+
+.titleLastWord {
+  color: var(--secondary);
+}
+
+.subtitle {
+  @extend %typography-extra-bold;
+  font-size: 32px;
+  color: inherit;
+  padding-bottom: var(--space-6);
+}
+
+.subtitleLastWord {
+  color: var(--primary);
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet) {
+  .header {
+    padding-right: 0;
+    padding-left: var(--padding-md);
+  }
+  .earth {
+    margin-right: -120px;
+  }
+  .title {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .header {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    width: 100%;
+    align-items: center;
+    padding-bottom: var(--space-12);
+    margin-top: var(--space-5);
+  }
+
+  .title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .earth {
+    top: -10px;
+  }
+}

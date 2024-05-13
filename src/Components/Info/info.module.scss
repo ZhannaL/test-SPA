@@ -1,0 +1,56 @@
+@import '../../Styles/typography.scss';
+
+.info {
+  padding: 0 var(--padding);
+  background-color: var(--background);
+  padding-bottom: var(--space-15);
+  text-align: left;
+}
+
+.infoTitle {
+  @extend %typography-extra-bold;
+  font-size: 32px;
+  padding: var(--space-10) 0 var(--space-6) 0;
+}
+
+.readMoreState {
+  display: none;
+}
+
+.textHidden {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+}
+
+.readMoreState:checked ~ .fullText .textHidden {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.readMoreState ~ .readMoreLabel:before {
+  content: 'Show more';
+}
+
+.readMoreState:checked ~ .readMoreLabel:before {
+  content: 'Show less';
+}
+
+.readMoreLabel {
+  cursor: pointer;
+  @extend %typography-extra-bold;
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.readMoreLabel:hover {
+  opacity: 0.6;
+}
+
+.fullText {
+  @extend %typography-extra-bold;
+  font-size: 20px;
+  text-align: left;
+  opacity: 0.6;
+}

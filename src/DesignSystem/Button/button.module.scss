@@ -1,0 +1,33 @@
+@import '../../Styles/typography.scss';
+
+.button {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 100px;
+  @extend %typography-bold;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+  user-select: none;
+  line-height: 1;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.small {
+  padding: var(--space-2) var(--space-10);
+  font-size: 16px;
+}
+
+.medium {
+  padding: var(--space-4) var(--space-10);
+  font-size: 22px;
+}
+
+.outlined {
+  background-color: transparent;
+  color: var(--primary);
+}

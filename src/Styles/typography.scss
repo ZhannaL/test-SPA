@@ -1,0 +1,19 @@
+$main-font: 'Lato', sans-serif;
+
+%typography-regular {
+  font-family: $main-font;
+  font-weight: 400;
+  font-style: normal;
+}
+
+%typography-bold {
+  font-family: $main-font;
+  font-weight: 700;
+  font-style: normal;
+}
+
+%typography-extra-bold {
+  font-family: $main-font;
+  font-weight: 900;
+  font-style: normal;
+}

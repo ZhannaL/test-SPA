@@ -1,0 +1,92 @@
+@import '../../../Styles/typography.scss';
+@import '../../../Styles/breakpoints.scss';
+
+.menu {
+  margin-left: auto;
+  color: var(--white);
+}
+
+.input {
+  display: none;
+}
+
+.link {
+  padding: var(--space-2);
+}
+
+.busketIcon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url('../../../assets/busket.svg') no-repeat center center;
+}
+
+.menuItem:hover .linkText {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}
+
+.menuItem:hover .busketIcon {
+  background: url('../../../assets/busketHover.svg') no-repeat center center;
+}
+
+.menuContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.drawer {
+  display: none;
+}
+
+@media screen and (max-width: $tablet) {
+  .menuContent {
+    display: none;
+  }
+
+  .menu .inputLabel {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 50px;
+    color: inherit;
+    background: url('../../../assets/menu.svg') no-repeat left center;
+    background-size: contain;
+  }
+
+  .drawer {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 180px;
+    padding: var(--space-2);
+    height: 100vh;
+    background: var(--black);
+    transform-origin: 100% 0;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .drawerMenuContent {
+    display: flex;
+    flex-direction: column;
+    & .menuItem {
+      padding: var(--space-2) var(--space-4);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .menu .input:checked ~ .drawer {
+    transform: translateX(0);
+  }
+
+  .menu .input:checked + .inputLabel {
+    background: url('../../../assets/close.svg') no-repeat left center;
+  }
+}

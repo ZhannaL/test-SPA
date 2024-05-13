@@ -1,0 +1,91 @@
+@import '../../Styles/typography.scss';
+@import '../../Styles/breakpoints.scss';
+
+.offersBlock {
+  padding: 0 var(--padding);
+  background-color: var(--background);
+}
+
+.offersTitle {
+  @extend %typography-extra-bold;
+  font-size: 32px;
+  padding: var(--space-10) 0;
+  text-align: left;
+}
+
+.offers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--padding);
+}
+
+.card:nth-child(3n + 1) {
+  grid-column: 1 / -1;
+
+  /* 
+    Nesting styles to change font-size for wide cards is unnecessary. 
+    Relying on JavaScript at the component level with specific props is preferred in this case, 
+    as it avoids cluttering styles and ensures clarity in the codebase. With nesting, 
+    we need to understand details of the Card component's implementation, such as the classname of the title, 
+    which could lead to maintenance issues.
+    */
+  & [class^='card_title__'] {
+    font-size: 72px;
+  }
+  & [class^='card_subtitle__'] {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: $desktop) and (min-width: $tablet) {
+  .offers {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--padding-md);
+  }
+  .card:nth-child(3n + 1),
+  .card {
+    grid-column: unset;
+
+    & [class^='card_title__'] {
+      font-size: 40px;
+      width: 100%;
+    }
+    & [class^='card_subtitle__'] {
+      font-size: 16px;
+    }
+    & button {
+      padding: var(--space-2) var(--space-10);
+      font-size: 16px;
+    }
+  }
+  .offersBlock {
+    padding: 0 var(--padding-md);
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .offers {
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--padding-sm);
+  }
+
+  .card:nth-child(3n + 1),
+  .card {
+    grid-column: unset;
+    & [class^='card_title__'] {
+      font-size: 40px;
+      width: 100%;
+    }
+    & [class^='card_subtitle__'] {
+      font-size: 16px;
+    }
+    & button {
+      padding: var(--space-2) var(--space-10);
+      font-size: 16px;
+    }
+  }
+
+  .offersBlock {
+    padding: 0 var(--padding-sm);
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../Styles/typography.scss';
+
+.navigation {
+  background-color: var(--black);
+  @extend %typography-bold;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--padding);
+  height: var(--nav-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
