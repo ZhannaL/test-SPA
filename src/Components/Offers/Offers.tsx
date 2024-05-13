@@ -1,8 +1,8 @@
 import { Card } from '../../DesignSystem/Card/Card';
-import offer1 from '../../assets/offer1.png';
-import offer2 from '../../assets/offer2.png';
-import offer3 from '../../assets/offer3.png';
-import offer4 from '../../assets/offer4.png';
+import offer1 from '../../assets/offer1.webp';
+import offer2 from '../../assets/offer2.webp';
+import offer3 from '../../assets/offer3.webp';
+import offer4 from '../../assets/offer4.webp';
 import styles from './offers.module.scss';
 
 const titleOffer1 = 'Move the borders of reality!';

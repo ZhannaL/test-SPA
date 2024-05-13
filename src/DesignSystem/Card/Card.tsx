@@ -1,5 +1,5 @@
 import { Button } from '../Button/Button';
-import shadow from '../../assets/shadow.png';
+import shadow from '../../assets/shadow.webp';
 import styles from './card.module.scss';
 
 type Props = {
